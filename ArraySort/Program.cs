@@ -5,17 +5,17 @@ void ArraySort(int[] array)
 
     for (int i = 0; i < array.Length-1; i++)
     {
-        int maxPisition = i;
+        int maxPosition = i;
         for (int j = i + 1; j < array.Length; j++)
         {
-            if(array[j]>array[maxPisition])
+            if(array[j]>array[maxPosition])
             {
-                maxPisition = j;
+                maxPosition = j;
             }
         }
         int temporary = array[i];
-        array[i] = array[maxPisition];
-        array[maxPisition] = temporary;
+        array[i] = array[maxPosition];
+        array[maxPosition] = temporary;
 
     }
 }
